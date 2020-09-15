@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #div1 {
+            position: relative;
+            display: none;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        #div2 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+
+        #div3 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+
+    <!-- 
+            defer IE兼容的异步加载js文件
+            data-main = '入口文件'
+        -->
+    <!-- <script src="js/require.js" async='true' defer data-main='js/main.js'></script> -->
+
+</head>
+
+<body>
+    <button id="btn1">显示控件</button>
+    <div id="div1">
+        <div id="div2"></div>
+    </div>
+    <div id="div3"></div>
+    1111
+    <script src="js/require.js" async='true' defer data-main='js/xxx'></script>
+</body>
+
+</html>
